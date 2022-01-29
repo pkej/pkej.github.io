@@ -20,34 +20,45 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'darkmode',
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
-<body>
-  <nav>
+<body class="p-2 text-white bg-slate-800">
+  <nav class="w-64 p-2 space-x-0 > * + * text-xs font-medium bg-slate-700">
     <div>
-      <h3>[pkej]</h3>
-      [<a href="https://twitter.com/pkej">Twitter</a>]
-      [<a href="https://www.youtube.com/c/PaulKEgellJohnsen">YouTube</a>]
-      [<a href="https://fb.me/pkejs">Facebook</a>]
+      <h3 class="text-sm font-bold">pkej</h3>
+      <div class="text-black">
+        [<a class="text-blue-300 underline" href="https://twitter.com/pkej">Twitter</a>][<a class="text-blue-300 underline" href="https://www.youtube.com/c/PaulKEgellJohnsen">YouTube</a>][<a class="text-blue-300 underline" href="https://fb.me/pkejs">Facebook</a>]
+      </div>
+      
     </div>
     <div>
-      <h3>[spdyvkng]</h3>
-      <div>
-        [<a href="https://twitter.com/spdyvkng">Twitter</a>]
-        [<a href="https://twitch.com/spdyvkng">Twitch</a>]
-        [<a href="https://www.youtube.com/channel/UCZ01QK8NDytsvN_ywyT4rkw">YouTube</a>]
-        [<a href="https://fb.me/spdyvkngs">Facebook</a>]
+      <h3 class="text-sm font-bold">spdyvkng</h3>
+      <div class="text-black">
+        [<a class="text-blue-300 underline" href="https://twitter.com/spdyvkng">Twitter</a>][<a class="text-blue-300 underline" href="https://twitch.com/spdyvkng">Twitch</a>][<a class="text-blue-300 underline" href="https://www.youtube.com/channel/UCZ01QK8NDytsvN_ywyT4rkw">YouTube</a>][<a class="text-blue-300 underline" href="fb.me/spdyvkngs">Facebook</a>]
       </div>
     </div>
   </nav>
   <!-- Add your site or application content here -->
-  <h1>Welcome</h1>
+  <h1 class="text-4xl font-big text-white">Welcome</h1>
   <p>Nothing much going on here.</p>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
- 
 </body>
 
 </html>
